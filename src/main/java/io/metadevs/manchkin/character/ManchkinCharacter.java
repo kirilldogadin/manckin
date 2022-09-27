@@ -6,4 +6,6 @@ import io.metadevs.manchkin.character.race.Race;
 public interface ManchkinCharacter {
     ManchkinClass manchkinClass();
     Race race();
+
+    short level();
 }

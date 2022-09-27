@@ -4,6 +4,8 @@ import io.metadevs.manchkin.character.ManchkinCharacter;
 import io.metadevs.manchkin.enemy.Effect;
 import io.metadevs.manchkin.enemy.Enemy;
 
+import java.util.List;
+
 /**
  * битва с монстром
  */
@@ -14,7 +16,7 @@ public interface Duel {
     ManchkinCharacter manchkinCharacter();
     Status status();
 
-    Effect DuelEffects();
+    List<Effect> DuelEffects();
 
     /**
      * рассчет итоговой формулы
@@ -26,6 +28,7 @@ public interface Duel {
     enum Status {
         IN_PROGRESS,
         WIN,
-        LOSS;
+        LOSS,
+        DRAW;
     }
 }
