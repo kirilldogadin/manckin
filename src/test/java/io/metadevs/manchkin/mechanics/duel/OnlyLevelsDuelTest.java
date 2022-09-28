@@ -3,6 +3,7 @@ package io.metadevs.manchkin.mechanics.duel;
 import io.metadevs.manchkin.character.ManchkinCharacter;
 import io.metadevs.manchkin.character.manclass.ManchkinClass;
 import io.metadevs.manchkin.character.race.Race;
+import io.metadevs.manchkin.clothes.InPlayBody;
 import io.metadevs.manchkin.enemy.BadStuff;
 import io.metadevs.manchkin.enemy.Effect;
 import io.metadevs.manchkin.enemy.Enemy;
@@ -84,6 +85,11 @@ class OnlyLevelsDuelTest {
 
             @Override
             public Race race() {
+                return null;
+            }
+
+            @Override
+            public InPlayBody body() {
                 return null;
             }
 
