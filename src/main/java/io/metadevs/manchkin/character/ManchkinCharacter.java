@@ -11,4 +11,6 @@ public interface ManchkinCharacter {
     InPlayBody body();
 
     short level();
+
+    Sex sex();
 }

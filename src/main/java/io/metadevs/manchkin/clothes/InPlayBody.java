@@ -8,8 +8,11 @@ import java.util.List;
 public interface InPlayBody {
 
     Helm helm();
+
     Armor armor();
+
     List<Weapon> weapons();
+
     Shoes shoes();
 
     List<Clothes> additionalClothes();
